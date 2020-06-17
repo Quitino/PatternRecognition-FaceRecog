@@ -22,7 +22,7 @@
 - 程序执行：	\FaceRec_py\运行detection.py文件，同样，运行时需要将文件路径设置为pycharm的执行路径，否则无法调用其他.py文件。人脸检测+识别代码，检测部分使用Dlib，识别部分使用卷积神经网络。文件夹my_faces里为自己头像采集所得数据集包含10000张图片，采集过程耗时三个多小时。Other_faces为[大众人脸数据集LFW](http://vis-www.cs.umass.edu/lfw/)包含13000张左右图片。
 
 
-###  Github 上传日志
+###  4.Github 上传日志
 
 ```
 remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
