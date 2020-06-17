@@ -34,4 +34,4 @@ To github.com:Quitino/PatternRecognition-FaceRecog.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
-又出了个`Git LFS`保存大文件？没上传的两个文件，随处可下载就不折腾了。
+又出了个`Git LFS`保存大文件？上传失败的两个文件，随处可下载就不折腾了。
