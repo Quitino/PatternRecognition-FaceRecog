@@ -22,3 +22,16 @@
 - 程序执行：	\FaceRec_py\运行detection.py文件，同样，运行时需要将文件路径设置为pycharm的执行路径，否则无法调用其他.py文件。人脸检测+识别代码，检测部分使用Dlib，识别部分使用卷积神经网络。文件夹my_faces里为自己头像采集所得数据集包含10000张图片，采集过程耗时三个多小时。Other_faces为[大众人脸数据集LFW](http://vis-www.cs.umass.edu/lfw/)包含13000张左右图片。
 
 
+###  Github 上传日志
+
+```
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: warning: See http://git.io/iEPt8g for more information.
+remote: warning: File FaceRec_vs/EigenFaceModel.xml is 55.42 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File FaceRec_vs/HogSvmModel.xml is 63.56 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+To github.com:Quitino/PatternRecognition-FaceRecog.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
+
+又出了个`Git LFS`保存大文件？没上传的两个文件，随处可下载就不折腾了。
