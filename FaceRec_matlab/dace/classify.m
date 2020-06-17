@@ -1,0 +1,28 @@
+function nClass = classify(newFacePath)
+% 整个分类（识别）过程
+global SVM;
+global Adaboost;
+
+display(' ');
+display(' ');
+display('识别开始...');
+
+% 读入相关训练结果
+display('载入训练参数...');
+
+    load('Mat/PCA.mat');
+    load('Mat/scaling.mat');
+    load('Mat/trainData.mat');
+    load('Mat/multiAdaboostTrain.mat');
+    display('..............................');
+  
+    xNewFace = ReadAFace(newFacePath); % 读入一个测试样本
+    xNewFace = double(xNewFace);
+    xNewFace = (xNewFace-meanVec)*V;% 经过pca变换降维
+    xNewFace = scaling(xNewFace,1,A0,B0);
+
+
+    display('身份识别中...');
+    nClass = multiAdaboostClassify(xNewFace);
+    display('..............................');
+    display(['身份识别结束，类别为：' num2str(nClass), '。']);

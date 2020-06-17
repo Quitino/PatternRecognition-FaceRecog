@@ -1,0 +1,138 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="D:\PatternRecognition\FacRec_matlab\MATLAB\FaceRec.prj" location="D:\PatternRecognition\FacRec_matlab\MATLAB" name="FaceRec" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>FaceRec</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>SWUST_冯波</param.authnamewatermark>
+    <param.email>FB_941219@163.com</param.email>
+    <param.company>SWUST</param.company>
+    <param.summary />
+    <param.description>模式识别课程项目练习</param.description>
+    <param.screenshot>E:\SWUST.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\SWUST\FaceRec\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\FaceRec\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\FaceRec\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\FaceRec\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\FaceRec</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.summary />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\facerecognition.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\computaccuracy.m</file>
+      <file>${PROJECT_ROOT}\FastBPfacedetection.m</file>
+      <file>${PROJECT_ROOT}\fastPCA.m</file>
+      <file>${PROJECT_ROOT}\kfun_rbf.m</file>
+      <file>${PROJECT_ROOT}\l1eq_pd.m</file>
+      <file>${PROJECT_ROOT}\LBP.m</file>
+      <file>${PROJECT_ROOT}\my_pca.m</file>
+      <file>${PROJECT_ROOT}\prew.m</file>
+      <file>${PROJECT_ROOT}\ReadFaces.m</file>
+      <file>${PROJECT_ROOT}\readsample.m</file>
+      <file>${PROJECT_ROOT}\scaling.m</file>
+      <file>${PROJECT_ROOT}\SolveHomotopy_CBM_std.m</file>
+      <file>${PROJECT_ROOT}\test.m</file>
+      <file>${PROJECT_ROOT}\visualize_pc.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\facerecognition.fig</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\FaceRec\for_testing" name="FaceRec.exe" optional="false">D:\PatternRecognition\FacRec_matlab\MATLAB\FaceRec\for_testing\FaceRec.exe</file>
+      <file location="${PROJECT_ROOT}\FaceRec\for_testing" name="splash.png" optional="false">D:\PatternRecognition\FacRec_matlab\MATLAB\FaceRec\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\FaceRec\for_testing" name="readme.txt" optional="true">D:\PatternRecognition\FacRec_matlab\MATLAB\FaceRec\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2016b</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
